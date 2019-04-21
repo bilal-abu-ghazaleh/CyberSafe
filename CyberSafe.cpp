@@ -77,6 +77,14 @@ void run(){
 	for(int i = 0; i < 8; i++){
 		printFunctions(i, outputs[i]);
 	}
+
+	cout << "\n";
+	for(int i = 0; i < 8; i++){
+		cout << outputs[i];
+	}
+	cout << "\n";
+
+
 	
 
 
