@@ -4,7 +4,7 @@
 
 
 **User Guide**
-1. Got to https://github.com/bilal-abu-ghazaleh/CyberSafe/ 
+1. Go to to https://github.com/bilal-abu-ghazaleh/CyberSafe/ 
 2. Click on the green “Clone or Download” button on the top right, then click “Download Zip”.
 3. After the file has downloaded, open the folder in finder and double click the file named “CyberSafe”.
 4. The program will run. 
