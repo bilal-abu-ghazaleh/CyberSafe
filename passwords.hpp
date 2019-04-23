@@ -1,6 +1,7 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                softwareUpdate.hpp
-//	This progam checks if softwareUpdate is on.
+//  Program for CyberSafe                                passwords.hpp
+//	This progam checks the output of the commands to see if password is secure
+//	and if firmware password is being used.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 

@@ -1,6 +1,7 @@
 // ---------------------------------------------------------------------------
 //  Tools program for CyberSafe.                                tools.hpp
 //  Created by Bilal Abu-Ghazaleh on Mon April 1, 2019
+// Contains all printing and formating functions
 // ----------------------------------------------------------------------------
 
 #include "tools.hpp"
@@ -27,9 +28,10 @@ void printLogo(){
 
 // Goodbye message at the end of the program
 void bye() {
+	cout << ("Thanks for coming.\n");
 	lineSeparator();
 
-	cout << ("Thanks for coming.\nPlease type in q to quit: ");
+	cout << ("Please type in q to quit:");
 	string input;
 	cin >> input;
 	while(input != "q" && input != "Q"){
@@ -38,18 +40,21 @@ void bye() {
 	}
 }
 
+//	Print line sep 80 chars len
 void lineSeparator() {
 		cout << "-------------------------------------------------------------"
 		<< "------------------\n";
 }
 
+// Clear screen terminal
 void nextFunction(int in){
 	system("clear");
 }
 
+// Prints output and inputs depending on result of test
 void printFunctions(int functionNumber, int ret){
 	switch (functionNumber)
-{
+	{
     case 0: // code to be executed if n = 1;
     	printf("\n1. Remote connections:\n");
     	if(ret){
@@ -92,7 +97,7 @@ void printFunctions(int functionNumber, int ret){
         	cout << "Your Firewall is turned on and secure.\n";
     	}else{
     		cout << "Warning!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
-	    	cout << "\nYour Firewall is tuned off.\n\n"
+	    	cout << "\nYour Firewall is turned off.\n\n"
 			<< "Use these steps to enable the application firewall:\n"
 			<< "1. Choose System Preferences from the Apple menu.\n"
 			<< "2. Click Security or Security & Privacy.\n"
@@ -173,13 +178,14 @@ void printFunctions(int functionNumber, int ret){
     	break;
     default: // code to be executed if n doesn't match any cases
     	break;
-}
+	}
+	cout << "-------------------------------------------------------\n";
 }
 
-
+// Get the nth word of a string
 string GetNthWord(string s, size_t n)
 {
-    std::istringstream iss (s);
+    istringstream iss (s);
     while(n-- > 0 && (iss >> s));
     return s;
 }

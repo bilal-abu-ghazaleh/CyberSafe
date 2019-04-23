@@ -1,9 +1,9 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                CAM.hpp
+//  Program for CyberSafe                                connections.hpp
 //	This progam checks the output of the commands to see which programs are 
-// 		Currently using the camera.
+// 	remotely connected to host.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
-// ----------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
 
 #ifndef CONNECTIONS_HPP
 #define CONNECTIONS_HPP

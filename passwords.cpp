@@ -1,7 +1,7 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                lsofgrepProcessor.cpp
-//	This progam checks the output of the commands to see which programs are 
-// 		Currently using the camera.
+//  Program for CyberSafe                                passwords.cpp
+//	This progam checks the output of the commands to see if password is secure
+//	and if firmware password is being used.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 #include "passwords.hpp"
@@ -31,7 +31,6 @@ run(){
 
 	string dictWord;
 
-	//TODO FIX DICT WHEN RUN BY CLICKING
 	ifstream dict("dictionary.txt"); 
 	if (!dict){ cout <<  "Unable to open dict.\n";}
 

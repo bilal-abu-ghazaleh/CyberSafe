@@ -1,7 +1,7 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                lsofgrepProcessor.cpp
+//  Program for CyberSafe                                connections.cpp
 //	This progam checks the output of the commands to see which programs are 
-// 		Currently using the camera.
+// 	remotely connected to host.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 #include "connections.hpp"
@@ -113,7 +113,6 @@ verifyConnections(){
 	 		temp--;
 	 		secure =false;
 		}
-
 }
 
 

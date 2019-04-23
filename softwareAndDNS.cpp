@@ -1,7 +1,7 @@
 //  ---------------------------------------------------------------------------
 //  Program for CyberSafe                                softwareAndDNS.cpp
-//	This progam checks the output of the commands to see which programs are 
-// 		Currently using the camera.
+//	This progam checks the output of the commands to see if software needs
+// 	and update and if DNS is enabled.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 #include "softwareAndDNS.hpp"

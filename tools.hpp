@@ -10,10 +10,6 @@
 #include <limits>
 #include <sstream>
 
-
-#include <cstdio>	     // for C compatability
-#include <cstdlib>     // for malloc() and calloc()
-#include <cstring>     // for time_t, time() and ctime()
 #include <string.h>
 #include <cerrno>
 #include <cmath>
@@ -41,10 +37,10 @@ void bye();
 // Print seperator
 void lineSeparator();
 
-// HERE
+// Clears terminal screen
 void nextFunction(int in);
 
-// Print function seperator
+// Prints output and inputs depending on result of test
 void printFunctions(int functionNumber, int ret);
 
 // Get nth word from string from http://www.cplusplus.com/

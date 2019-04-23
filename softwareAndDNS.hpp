@@ -1,6 +1,7 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                softwareUpdate.hpp
-//	This progam checks if softwareUpdate is on.
+//  Program for CyberSafe                                softwareAndDNS.hpp
+//	This progam checks the output of the commands to see if software needs
+// 	and update and if DNS is enabled.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 

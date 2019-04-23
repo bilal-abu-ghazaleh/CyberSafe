@@ -1,12 +1,11 @@
 //  ---------------------------------------------------------------------------
-//  Program for CyberSafe                                lsofgrepProcessor.cpp
+//  Program for CyberSafe                                cam.cpp
 //	This progam checks the output of the commands to see which programs are 
-// 		Currently using the camera.
+// 	Currently using the camera.
 //  Created by Bilal Abu-Ghazaleh on Sun September 9, 2018
 // ----------------------------------------------------------------------------
 #include "cam.hpp"
 
-// Sean O'Brian
 
 // ----------------------------------------------------------------------------
 int cam::
@@ -110,10 +109,10 @@ checkAcceptable(){
 			cout << "Terminating Illegal Program: \t" << processes[i] << "\n";
 			myfile << processesNumbers[i] << "\n";
 			secure = false;
-			cout << ("\nPlease type in n for next: ");
+			cout << ("\nPlease type in yes for next: ");
 			string input;
 			cin >> input;
-			while(input != "n" && input != "N"){
+			while(input != "yes" && input != "YES"){
 				cout << ("Please type in n for next: ");
 				cin >> input;
 			}
