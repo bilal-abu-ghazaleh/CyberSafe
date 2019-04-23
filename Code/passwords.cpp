@@ -16,10 +16,20 @@ run(){
 	while(!correctPass){
 		cout << "Please type in your password and make sure it is correct: ";
 		cin >> password;
+		
+		// Get rid of quoatation
+		size_t found_quote = password.find("\"");
+		while(found_quote != string::npos){
+			password.insert(found_quote, "\\");
+			cout << password << endl;
+			found_quote = password.find("\"", found_quote + 2);
+		}
 
-		string command = "echo ";
+		string command = "echo \"";
 		command += password;
-		command += " | sudo -S firmwarepasswd -check > firmware_output.txt";
+		command += "\" | sudo -S firmwarepasswd -check > firmware_output.txt";
+
+
 		if (DEBUG)cout << command << endl;
 		system(command.c_str());
 		
